@@ -1,0 +1,6 @@
+- hosts: localhost
+  vars:
+    ethereum_genesis_timestamp: 0
+    ethereum_genesis_generator_container_image: ethpandaops/ethereum-genesis-generator:default-deneb-genesis
+  roles:
+  - role: ethpandaops.general.ethereum_genesis
