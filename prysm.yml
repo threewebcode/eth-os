@@ -1,0 +1,13 @@
+- hosts: localhost
+  become: true
+  vars:
+    prysm_cleanup: true
+    geth_cleanup: true 
+  roles:
+  - role: ethpandaops.general.geth
+  - role: ethpandaops.general.prysm
+  # tasks:
+  #   - name: Run specific task in the role
+  #     include_role:
+  #       name: ethpandaops.general.prysm
+  #       tasks_from: setup
